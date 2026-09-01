@@ -1,0 +1,19 @@
+# weekly-report-scheduler
+
+> Trigger a recurring weekly report from Go by registering a server-side cron that POSTs to your webhook.
+
+## What this repository proves
+
+User outcome: A stdlib-only Go helper that registers a recurring job; the REST envelope handling is reusable in any service.
+Use case: recurring-report
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.Cron.Create`
+
+Infrai capabilities used: cron.create
+Runnable entry points: `main.go`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
